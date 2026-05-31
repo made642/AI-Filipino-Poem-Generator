@@ -5,24 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <script src="https://unpkg.com/axios@1.13.2/dist/axios.min.js"></script>
     <title>AI Filipino Poem Generator</title>
   </head>
   <body>
+    <div class = "container">
     <header>
       <h1>AI Filipino Poem Generator</h1>
     </header>
     <main>
-      <div class="input-container">
-        <input
-          type="text"
-          id="themeInput"
-          placeholder="Enter a theme for your poem (e.g., love, nature, etc.)"
-        />
-        <button id="generateBtn">Generate Poem</button>
+      <form id="poemForm">
+        <div class="input-container">
+          <input
+            type="text"
+            id="themeInput"
+            placeholder="Enter a theme for your poem (e.g., love, nature, etc.)"
+          />
+          <button id="generateBtn">Generate Poem</button>
+        </div>
+      </form>
+      <div>
+      <p class="poem" id="poemOutput">
+        I have a Filipino dream!
+        <br />
+        Stop the war and wild loud of scream
+        <br />
+        I have a dream not for myself.
+        <br />
+        Not a selfish man who thinks of himself.
+      </p>
       </div>
     </main>
+
 
     <footer>
       <p>
@@ -41,6 +56,7 @@
         >
       </p>
     </footer>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
