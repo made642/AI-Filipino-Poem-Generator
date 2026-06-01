@@ -7,55 +7,50 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <script src="https://unpkg.com/axios@1.13.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Filipino Poem Generator</title>
   </head>
   <body>
-    <div class = "container">
-    <header>
-      <h1>AI Filipino Poem Generator</h1>
-    </header>
-    <main>
-      <form id="poemForm">
-        <div class="input-container">
-          <input
-            type="text"
-            id="themeInput"
-            placeholder="Enter a theme for your poem (e.g., love, nature, etc.)"
-          />
-          <button id="generateBtn">Generate Poem</button>
+    <div class="container">
+      <header>
+        <h1>AI Filipino Poem Generator</h1>
+      </header>
+      <main>
+        <form id="poemForm">
+          <div class="input-container">
+            <input
+              type="text"
+              id="themeInput"
+              placeholder="Enter a theme for your poem (e.g., love, nature, etc.)"
+              required
+            />
+            <button type="submit" id="generateBtn">Generate Poem</button>
+          </div>
+        </form>
+        <div>
+          <p class="poem" id="poemOutput"></p>
         </div>
-      </form>
-      <div>
-      <p class="poem" id="poemOutput">
-        I have a Filipino dream!
-        <br />
-        Stop the war and wild loud of scream
-        <br />
-        I have a dream not for myself.
-        <br />
-        Not a selfish man who thinks of himself.
-      </p>
-      </div>
-    </main>
+      </main>
 
-
-    <footer>
-      <p>
-        This project was coded by
-        <a href="https://github.com/made642" target="_blank">Maridel Cañada</a>
-        and is
-        <a
-          href="https://github.com/made642/AI-Filipino-Poem-Generator"
-          target="_blank"
-        >
-          on GitHub</a
-        >
-        and
-        <a href="https://ai-fil-generator.netlify.app/" target="_blank"
-          >hosted on Netlify</a
-        >
-      </p>
-    </footer>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/made642" target="_blank"
+            >Maridel Cañada</a
+          >
+          and is
+          <a
+            href="https://github.com/made642/AI-Filipino-Poem-Generator"
+            target="_blank"
+          >
+            on GitHub</a
+          >
+          and
+          <a href="https://ai-fil-generator.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
+        </p>
+      </footer>
     </div>
     <script src="index.js"></script>
   </body>
