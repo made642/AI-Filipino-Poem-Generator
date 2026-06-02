@@ -54,6 +54,10 @@ button {
   line-height: 20px;
 }
 
+button:hover {
+  opacity: 0.9;
+  background-color: #1d1f49;
+}
 .poem {
   font-size: 18px;
   line-height: 1.5;
@@ -64,7 +68,27 @@ button {
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
   border-radius: 10px;
 }
+hidden {
+    display: none;
+}
 
+.generated-poem {
+  animation: blink_smooth 2s infinite;
+}
+@keyframes blink_smooth {
+  to {
+    visibility: hidden;
+  }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 footer {
   font-size: 12px;
   text-align: center;
