@@ -1,4 +1,5 @@
 function displayPoem(response) {
+  console.log(response.data.answer);
   new Typewriter("#poemOutput", {
     strings: response.data.answer,
     autoStart: true,
@@ -21,6 +22,8 @@ function generatePoem(event) {
   let poemElement = document.querySelector("#poemOutput");
   poemElement.classList.remove("blink-smooth");
   poemElement.innerHTML = `<div class="generated-poem">⏳ Generating a Filipino poem about ${instructionsInput.value}</div>`;
+
+  axios.get(apiUrl).then(displayPoem);
 }
 
 let poemFormElement = document.querySelector("#poemForm");
